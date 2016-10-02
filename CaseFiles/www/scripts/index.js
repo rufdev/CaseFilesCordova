@@ -13,11 +13,26 @@
         document.addEventListener( 'resume', onResume.bind( this ), false );
         
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
-        var parentElement = document.getElementById('deviceready');
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        //var parentElement = document.getElementById('deviceready');
+        //var listeningElement = parentElement.querySelector('.listening');
+        //var receivedElement = parentElement.querySelector('.received');
+        //listeningElement.setAttribute('style', 'display:none;');
+        //receivedElement.setAttribute('style', 'display:block;');
+
+        $('#get-cases').click(function () {
+            $("#case-list").show();
+            $.get("http://mangtaswebapi.dev/api/cases", function (data) {
+                var cases = [];
+                $.each(data.cases, function (k, v) {
+                    cases.push('<li data-role="list-divider" id="title" class="ui-li-divider ui-bar-a">'+v.caseno+'</li>');
+                    cases.push('<li>Case Title: <span>' + v.title + '</span></li>');
+                });
+                $("#case-list").html(cases.join(""));
+                
+            });
+            return false;
+        });
+
     };
 
     function onPause() {

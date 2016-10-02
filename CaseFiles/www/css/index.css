@@ -1,4 +1,4 @@
-* {
+/** {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -94,4 +94,39 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}*/
+
+.not-displayed {
+    display: none;
+}
+
+form {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#zip-code-input {
+    font-size: 25px;
+}
+
+#get-weather-btn {
+    font-size: 22px;
+}
+
+#title {
+    font-size: 16px;
+}
+
+#summary {
+    font-size: 35px;
+}
+
+#summary img {
+    float: right;
+}
+
+#error-msg {
+    text-align: center;
+    margin-top:  50%;
+    font-weight: bold;    
 }
