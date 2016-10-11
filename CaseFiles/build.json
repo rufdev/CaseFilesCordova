@@ -1,10 +1,10 @@
 {
      "android": {
          "release": {
-             "keystore": "",
-             "storePassword": "",
-             "alias": "",
-             "password" : "",
+             "keystore": "C:\\casefiles-key.keystore",
+             "storePassword": "z7a18q",
+             "alias": "rufdev",
+             "password" : "z7a18q",
              "keystoreType": ""
          }
      }

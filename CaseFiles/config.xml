@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myapp498a5e" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myapp498a5e" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US" android-versionCode="">
   <name>CaseFiles</name>
   <description>case fils</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">ruf.dev</author>
@@ -16,6 +16,7 @@
   <allow-intent href="sms:*" />
   <allow-intent href="mailto:*" />
   <allow-intent href="geo:*" />
+  <allow-navigation href="http://mangtaswebapi-aguilarufino790764.codeanyapp.com" />
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>
@@ -106,4 +107,5 @@
   <platform name="wp8">
     <splash src="res/screens/wp8/SplashScreenImage.png" width="768" height="1280" />
   </platform>
+  <preference name="ShowTitle" value="True" />
 </widget>
